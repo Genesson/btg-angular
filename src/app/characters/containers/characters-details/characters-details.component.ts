@@ -3,16 +3,15 @@ import { Component, OnInit } from '@angular/core';
 import { CharactersSandbox } from '../../characters.sandbox';
 
 @Component({
-  selector: 'app-characters',
-  templateUrl: './characters.component.html',
-  styleUrls: ['./characters.component.scss']
+  selector: 'app-characters-details',
+  templateUrl: './characters-details.component.html',
+  styleUrls: ['./characters-details.component.scss']
 })
-export class CharactersComponent implements OnInit {
+export class CharactersDetailsComponent implements OnInit {
 
   constructor(private charactersSandbox: CharactersSandbox) { }
 
   ngOnInit() {
-    this.charactersSandbox.getCharacters();
   }
 
 }
