@@ -1,0 +1,13 @@
+[social] {
+  list-style: none;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  column-gap: 2.0rem;
+
+  & [social-img] {
+    & svg {
+      margin-top: 20px;
+      fill: #767676;
+    }
+  }
+}
