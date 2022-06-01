@@ -1,0 +1,30 @@
+[container] {
+  margin: 6px 0 4px;
+
+  [link] {
+    text-decoration: none;
+
+    & [thumb] {
+      background: #e62429;
+    }
+
+    & [content] {
+      background: #151515;
+      padding: 16px 24px 17px 20px;
+
+      & [title] {
+        font-size: 1.6rem;
+        color: #ffffff;
+        text-transform: uppercase;
+      }
+
+      & [footer] {
+
+        & [description] {
+          color: #767676;
+          text-transform: uppercase;
+        }
+      }
+    }
+  }
+}
