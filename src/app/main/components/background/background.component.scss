@@ -1,0 +1,25 @@
+[container] {
+  height: 400px;
+  background-image: url('../../../../assets/images/characters_background.jpeg');
+  background-position: 50%;
+
+  [wrapper] {
+    width: 90%;
+    height: 100%;
+    margin: 0 auto;
+    text-align: center;
+    color: #ffffff;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+    & [title] {
+      font-size: 4.4rem;
+    }
+
+    & [description] {
+      font-size: 1.6rem;
+    }
+  }
+}

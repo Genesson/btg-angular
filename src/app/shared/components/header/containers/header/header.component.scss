@@ -1,0 +1,21 @@
+[container] {
+  height: 92px;
+  background-color: #202020;
+
+  [wrapper] {
+    max-width: 1200px;
+    margin: auto;
+
+    [upper] {
+      height: 52px;
+      border-bottom: 1px solid #393939;
+
+      display: flex;
+      justify-content: center;
+    }
+
+    [lower] {
+      height: 40px;
+    }
+  }
+}
