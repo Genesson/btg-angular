@@ -1,0 +1,32 @@
+[container] {
+  margin: 6px 0 4px;
+
+  [link] {
+    text-decoration: none;
+
+    & [thumb] {
+      width: 224px;
+      height: 224px;
+      background-size: cover;
+    }
+
+    & [content] {
+      background: #151515;
+      padding: 16px 24px 17px 20px;
+
+      & [title] {
+        min-height: 3.6rem;
+        font-size: 1.6rem;
+        font-weight: bold;
+        color: #ffffff;
+        text-transform: uppercase;
+      }
+    }
+
+    &:hover {
+      & [content] {
+        background: lighten(#202020, 10%);
+      }
+    }
+  }
+}

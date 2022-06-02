@@ -9,6 +9,8 @@ import { CharactersSandbox } from '../../characters.sandbox';
 })
 export class CharactersDetailsComponent implements OnInit {
 
+  public selected$ = this.charactersSandbox.selected$;
+
   constructor(private charactersSandbox: CharactersSandbox) { }
 
   ngOnInit() {

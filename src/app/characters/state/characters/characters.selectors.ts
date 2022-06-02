@@ -14,4 +14,9 @@ export class CharactersSelectors {
     return characters;
   }
 
+  @Selector([CharactersState.selected])
+  static selected(selected: CharactersStateModel['selected']) {
+    return selected;
+  }
+
 }

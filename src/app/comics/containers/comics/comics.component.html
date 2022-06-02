@@ -1,0 +1,23 @@
+
+<section container>
+  <ng-container *ngIf="!(isLoading$ | async); else loading">
+    <div content>
+      <app-comic-card
+        *ngFor="let comic of comics$ | async"
+        (selectComic)="onSelectComic($event)"
+        [comic]="comic">
+      </app-comic-card>
+    </div>
+  </ng-container>
+</section>
+
+<app-pagination
+  [isLoading]="(isLoading$ | async) || false"
+  (clickPagination)="loadComics($event)">
+</app-pagination>
+
+<ng-template #loading>
+  <div content>
+    <app-load></app-load>
+  </div>
+</ng-template>

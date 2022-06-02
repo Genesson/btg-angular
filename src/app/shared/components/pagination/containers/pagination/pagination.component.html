@@ -1,0 +1,12 @@
+<section container>
+  <div pagination>
+    <span arrow
+      (click)="(!isLoading) ? this.onClickPagination('Previous') : null">
+      Previous
+    </span>
+    <span arrow
+      (click)="(!isLoading) ? this.onClickPagination('Next') : null">
+      Next
+    </span>
+  </div>
+</section>
