@@ -1,0 +1,11 @@
+<section container>
+  <a link (click)="selectCharacter.emit(character)">
+    <figure
+      thumb
+      [ngStyle]="{'background-image': 'url(' + character?.thumbnail?.path + '.' + character?.thumbnail?.extension + ')'}">
+    </figure>
+    <div content>
+      <p title>{{ character?.name }}</p>
+    </div>
+  </a>
+</section>

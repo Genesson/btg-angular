@@ -3,9 +3,12 @@
 
   [link] {
     text-decoration: none;
+    cursor: pointer;
 
     & [thumb] {
-      background: #e62429;
+      width: 224px;
+      height: 224px;
+      background-size: cover;
     }
 
     & [content] {
@@ -13,17 +16,17 @@
       padding: 16px 24px 17px 20px;
 
       & [title] {
+        min-height: 3.6rem;
         font-size: 1.6rem;
+        font-weight: bold;
         color: #ffffff;
         text-transform: uppercase;
       }
+    }
 
-      & [footer] {
-
-        & [description] {
-          color: #767676;
-          text-transform: uppercase;
-        }
+    &:hover {
+      & [content] {
+        background: lighten(#202020, 10%);
       }
     }
   }
