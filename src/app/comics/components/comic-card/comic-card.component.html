@@ -1,0 +1,11 @@
+<section container>
+  <a link (click)="selectComic.emit(comic)">
+    <figure
+      thumb
+      [ngStyle]="{'background-image': 'url(' + comic?.thumbnail?.path + '.' + comic?.thumbnail?.extension + ')'}">
+    </figure>
+    <div content>
+      <p title>{{ comic?.title }}</p>
+    </div>
+  </a>
+</section>
