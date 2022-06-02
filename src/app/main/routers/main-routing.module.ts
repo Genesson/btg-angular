@@ -5,7 +5,7 @@ import { MainComponent } from '../containers/main/main.component';
 
 const routes: Routes = [
   {
-    path: 'main', component: MainComponent,
+    path: '', component: MainComponent,
     children: [
       {
         path: '', redirectTo: 'characters', pathMatch: 'full'
@@ -13,6 +13,14 @@ const routes: Routes = [
       {
         path: 'characters',
         loadChildren: () => import('../../characters/characters.module').then(m => m.CharactersModule)
+      },
+      {
+        path: 'comics',
+        loadChildren: () => import('../../comics/comics.module').then(m => m.ComicsModule)
+      },
+      {
+        path: 'creators',
+        loadChildren: () => import('../../creators/creators.module').then(m => m.CreatorsModule)
       }
     ]
   }
