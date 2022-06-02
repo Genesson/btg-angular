@@ -1,0 +1,31 @@
+[container] {
+  display: flex;
+  justify-content: center;
+
+  & [pagination] {
+    margin: 30px 0;
+
+    display: grid;
+    column-gap: 20px;
+    grid-template-columns: 1fr 1fr;
+
+    & [arrow] {
+      background: #202020;
+      color: #ffffff;
+      border-radius: 0.4rem;
+      text-align: center;
+      font-size: 1.4rem;
+      font-weight: 800;
+      padding: 1.0rem;
+      cursor: pointer;
+
+      &:hover {
+        background: lighten(#202020, 10%);
+      }
+
+      &:active {
+        background: lighten(#202020, 10%);
+      }
+    }
+  }
+}
