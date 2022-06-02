@@ -1,0 +1,11 @@
+<section container>
+  <a link (click)="selectCreator.emit(creator)">
+    <figure
+      thumb
+      [ngStyle]="{'background-image': 'url(' + creator?.thumbnail?.path + '.' + creator?.thumbnail?.extension + ')'}">
+    </figure>
+    <div content>
+      <p title>{{ creator?.firstName }}</p>
+    </div>
+  </a>
+</section>

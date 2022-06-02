@@ -1,0 +1,10 @@
+[container] {
+  margin-top: 5.0rem;
+
+  [content] {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(184px, 1fr));
+    grid-gap: 2.0rem;
+    justify-items: center;
+  }
+}

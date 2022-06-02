@@ -1,0 +1,23 @@
+
+<section container>
+  <ng-container *ngIf="!(isLoading$ | async); else loading">
+    <div content>
+      <app-creator-card
+        *ngFor="let creator of creators$ | async"
+        (selectCreator)="onSelectCreator($event)"
+        [creator]="creator">
+      </app-creator-card>
+    </div>
+  </ng-container>
+</section>
+
+<app-pagination
+  [isLoading]="(isLoading$ | async) || false"
+  (clickPagination)="loadCreators($event)">
+</app-pagination>
+
+<ng-template #loading>
+  <div content>
+    <app-load></app-load>
+  </div>
+</ng-template>
